@@ -1,0 +1,10 @@
+1;Did World War II start in 1914?;y/n;n
+2;Was Alexander the Great a Roman emperor?y/n;n
+3;Did the American Revolution take place in the 18th century?y/n;y
+4;Was Cleopatra a ruler of ancient Greece?y/n;n
+5;Did the Renaissance occur during the Middle Ages?y/n;n
+6;Was the Great Wall of China built to keep out invaders?y/n;y
+7;Did Julius Caesar become the first emperor of Rome?y/n;n
+8;Was the Industrial Revolution a period of rapid technological advancement?y/n;y
+9;Did the French Revolution take place in the 19th century?y/n;y
+10;Was the Declaration of Independence signed in 1776?y/n;y
