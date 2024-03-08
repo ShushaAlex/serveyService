@@ -52,6 +52,7 @@ public class SurveyServiceImpl implements SurveyService {
         return studentRepository.add(student);
     }
 
+    @Override
     public void getAnswers() {
         Student student = getStudentInfo();
         List<Question> questionList = questionRepository.getQuestionsList();
