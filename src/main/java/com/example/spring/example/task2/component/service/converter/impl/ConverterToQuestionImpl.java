@@ -9,7 +9,7 @@ public class ConverterToQuestionImpl implements ConverterToQuestion {
     public Question stringToQuestion(String string) {
         Question question = new Question();
         String[] stringParts = string.split(";");
-        question.setId(Integer.getInteger(stringParts[0]));
+        question.setId(Integer.parseInt(stringParts[0]));
         question.setQuestion(stringParts[1]);
         question.setOptionsOfAnswer(stringParts[2]);
         question.setCorrectAnswer(stringParts[3]);

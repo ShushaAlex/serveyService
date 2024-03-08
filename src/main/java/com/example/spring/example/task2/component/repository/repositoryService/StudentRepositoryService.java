@@ -10,7 +10,7 @@ public interface StudentRepositoryService {
      * @param student
      * @return student from the param
      */
-    Student add(Student student) throws IllegalAccessException;
+    Student add(Student student);
 
     /**
      * Return copy of collection from QuestionRepository

@@ -10,7 +10,7 @@ public interface QuestionRepositoryService {
      * @param question
      * @return question from the param
      */
-    Question add(Question question) throws IllegalAccessException;
+    Question add(Question question);
 
     /**
      * Return copy of collection from QuestionRepository
