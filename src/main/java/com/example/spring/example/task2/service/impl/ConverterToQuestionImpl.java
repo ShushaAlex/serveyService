@@ -1,9 +1,11 @@
-package com.example.spring.example.task2.component.service.converter.impl;
+package com.example.spring.example.task2.service.impl;
 
-import com.example.spring.example.task2.component.service.converter.ConverterToQuestion;
-import com.example.spring.example.task2.model.entity.Question;
+import com.example.spring.example.task2.service.ConverterToQuestion;
+import com.example.spring.example.task2.dto.Question;
+import org.springframework.stereotype.Component;
 
-public class ConverterToQuestionImpl implements ConverterToQuestion {
+@Component("converter")
+ class ConverterToQuestionImpl implements ConverterToQuestion {
 
     @Override
     public Question stringToQuestion(String string) {

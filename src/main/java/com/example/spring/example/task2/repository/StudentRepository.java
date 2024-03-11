@@ -1,15 +1,13 @@
-package com.example.spring.example.task2.component.repository;
+package com.example.spring.example.task2.repository;
 
-import com.example.spring.example.task2.component.repository.repositoryService.StudentRepositoryService;
-import com.example.spring.example.task2.model.entity.Student;
-import lombok.NoArgsConstructor;
+import com.example.spring.example.task2.dto.Student;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-@NoArgsConstructor
-public class StudentRepository implements StudentRepositoryService {
+@Component
+public class StudentRepository {
     private List<Student> studentList = new ArrayList<>();
-    @Override
     public Student add(Student student) throws IllegalArgumentException {
         if (student != null) {
             this.studentList.add(student);
@@ -20,7 +18,6 @@ public class StudentRepository implements StudentRepositoryService {
         }
     }
 
-    @Override
     public List<Student> getStudensList() {
         return List.copyOf(studentList);
     }

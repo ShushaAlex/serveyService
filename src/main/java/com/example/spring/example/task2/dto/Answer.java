@@ -1,4 +1,4 @@
-package com.example.spring.example.task2.model.entity;
+package com.example.spring.example.task2.dto;
 
 import lombok.Data;
 

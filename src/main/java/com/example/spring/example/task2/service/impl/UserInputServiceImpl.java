@@ -1,14 +1,14 @@
-package com.example.spring.example.task2.component.service.userInputService.impl;
+package com.example.spring.example.task2.service.impl;
 
-import com.example.spring.example.task2.component.service.userInputService.UserInputService;
-import com.example.spring.example.task2.model.entity.Answer;
-import com.example.spring.example.task2.model.entity.Question;
-import lombok.NoArgsConstructor;
+import com.example.spring.example.task2.service.UserInputService;
+import com.example.spring.example.task2.dto.Answer;
+import com.example.spring.example.task2.dto.Question;
+import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
-@NoArgsConstructor
-public class UserInputServiceImpl implements UserInputService {
+@Component("userInputService")
+class UserInputServiceImpl implements UserInputService {
     Scanner scanner = new Scanner(System.in);
     @Override
     public String getUserInfo(String question) {

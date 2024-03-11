@@ -1,6 +1,6 @@
-package com.example.spring.example.task2.component.service.surveyService;
+package com.example.spring.example.task2.service;
 
-import com.example.spring.example.task2.model.entity.Student;
+import com.example.spring.example.task2.dto.Student;
 
 public interface SurveyService {
     /**

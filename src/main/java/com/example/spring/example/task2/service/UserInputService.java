@@ -1,7 +1,7 @@
-package com.example.spring.example.task2.component.service.userInputService;
+package com.example.spring.example.task2.service;
 
-import com.example.spring.example.task2.model.entity.Answer;
-import com.example.spring.example.task2.model.entity.Question;
+import com.example.spring.example.task2.dto.Answer;
+import com.example.spring.example.task2.dto.Question;
 
 public interface UserInputService {
     /**

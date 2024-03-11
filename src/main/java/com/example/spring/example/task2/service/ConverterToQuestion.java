@@ -1,6 +1,6 @@
-package com.example.spring.example.task2.component.service.converter;
+package com.example.spring.example.task2.service;
 
-import com.example.spring.example.task2.model.entity.Question;
+import com.example.spring.example.task2.dto.Question;
 
 public interface ConverterToQuestion {
 

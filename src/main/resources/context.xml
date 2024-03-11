@@ -1,34 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-<!--    <bean id="someClassA" class="com.example.spring.example.SomeClassA">-->
-<!--        <property name="someClassB" ref="someClassB" />-->
+
+<!--    <bean id="surveyServiceImpl" class="com.example.spring.example.task2.component.service.impl.SurveyServiceImpl">-->
+<!--        <constructor-arg name="questionRepository" ref="questionRepository"/>-->
+<!--        <constructor-arg name="studentRepository" ref="studentRepository"/>-->
+<!--        <constructor-arg name="userInputService" ref="userInputService"/>-->
+<!--        <constructor-arg name="answerRepository" ref="answerRepository"/>-->
+<!--        <constructor-arg name="reedFileService" ref="reedFileService"/>-->
+<!--        <constructor-arg name="converter" ref="converter"/>-->
+
 <!--    </bean>-->
 
-<!--    <bean id="someClassB" class="com.example.spring.example.SomeClassB">-->
-<!--        <constructor-arg name="someClassA" ref="someClassA"/>-->
-<!--    </bean>-->
+    <!--    <bean id="studentRepository" class="com.example.spring.example.task2.component.repository.StudentRepository"/>-->
+<!--    <bean id="questionRepository" class="com.example.spring.example.task2.component.repository.QuestionRepository"/>-->
+<!--    <bean id="userInputService" class="com.example.spring.example.task2.component.service.impl.UserInputServiceImpl"/>-->
+<!--    <bean id="answerRepository" class="com.example.spring.example.task2.component.repository.AnswerRepository"/>-->
+<!--    <bean id="reedFileService" class="com.example.spring.example.task2.util.Utils"/>-->
+<!--    <bean id="converter" class="com.example.spring.example.task2.component.service.impl.ConverterToQuestionImpl"/>-->
 
-
-    <bean id="surveyServiceImpl" class="com.example.spring.example.task2.component.service.surveyService.SurveyServiceImpl">
-        <constructor-arg name="questionRepository" ref="questionRepository"/>
-        <constructor-arg name="studentRepository" ref="studentRepository"/>
-        <constructor-arg name="userInputService" ref="userInputService"/>
-        <constructor-arg name="answerRepository" ref="answerRepository"/>
-        <constructor-arg name="reedFileService" ref="reedFileService"/>
-        <constructor-arg name="converter" ref="converter"/>
-
-    </bean>
-
-    <bean id="studentRepository" class="com.example.spring.example.task2.component.repository.StudentRepository"/>
-    <bean id="questionRepository" class="com.example.spring.example.task2.component.repository.QuestionRepository"/>
-    <bean id="userInputService" class="com.example.spring.example.task2.component.service.userInputService.impl.UserInputServiceImpl"/>
-    <bean id="answerRepository" class="com.example.spring.example.task2.component.repository.AnswerRepository"/>
-    <bean id="reedFileService" class="com.example.spring.example.task2.util.impl.ReedFileServiceImpl"/>
-    <bean id="converter" class="com.example.spring.example.task2.component.service.converter.impl.ConverterToQuestionImpl"/>
+    <context:component-scan base-package="com.example.spring.example.task2"/>
 
 
 </beans>

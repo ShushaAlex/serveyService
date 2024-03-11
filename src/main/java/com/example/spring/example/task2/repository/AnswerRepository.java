@@ -1,16 +1,15 @@
-package com.example.spring.example.task2.component.repository;
+package com.example.spring.example.task2.repository;
 
-import com.example.spring.example.task2.component.repository.repositoryService.AnswerRepositoryService;
-import com.example.spring.example.task2.model.entity.Answer;
-import lombok.NoArgsConstructor;
+import com.example.spring.example.task2.dto.Answer;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+@Component
+public class AnswerRepository {
 
-@NoArgsConstructor
-public class AnswerRepository implements AnswerRepositoryService {
     private List<Answer> answerList = new ArrayList<>();
-    @Override
+
     public Answer add(Answer answer) throws IllegalArgumentException {
         if (answer != null) {
             this.answerList.add(answer);
@@ -21,7 +20,6 @@ public class AnswerRepository implements AnswerRepositoryService {
         }
     }
 
-    @Override
     public List<Answer> getAnswerList() {
         return List.copyOf(answerList);
     }

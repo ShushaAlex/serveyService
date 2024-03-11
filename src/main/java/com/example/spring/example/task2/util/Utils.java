@@ -1,14 +1,14 @@
-package com.example.spring.example.task2.util.impl;
-
-import com.example.spring.example.task2.util.ReedFileService;
+package com.example.spring.example.task2.util;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReedFileServiceImpl implements ReedFileService {
-    @Override
-    public List<String> getStringsListFromFile(String filePath) {
+public final class Utils {
+    private Utils() {
+    }
+
+    public static List<String> getStringsListFromFile(String filePath) {
         try (FileInputStream inputStream = new FileInputStream(filePath);
              InputStreamReader reader = new InputStreamReader(inputStream);
              BufferedReader bufferedReader = new BufferedReader(reader)) {
